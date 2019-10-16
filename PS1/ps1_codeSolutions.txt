@@ -1,0 +1,6 @@
+Sort -n -r -k 10 cuffdiff.txt > sorted.cuffdiff.out
+
+head -n 100 sorted.cuffdiff.out > top100.sorted.cuffdiff.out
+
+cut -c 2-10 top100.sorted.cuffdiff.out > differentially.expressed.genes.txt
+
